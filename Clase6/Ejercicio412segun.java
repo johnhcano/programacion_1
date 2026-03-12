@@ -15,7 +15,7 @@ public class Ejercicio412segun {
         num2 = sc.nextDouble();
         System.out.println("Digite la selección 1, 2 o 3");
         seleccion = sc.nextInt();
-
+        /* 
         switch (seleccion) {
             case 1:
                 System.out.println("La suma es: " + (num1 + num2));
@@ -30,6 +30,14 @@ public class Ejercicio412segun {
                 System.out.println("Opción no valida");
                 break;
         }
+        */
+        switch (seleccion) {
+            case 1 -> System.out.println("La suma es: " + (num1 + num2));
+            case 2 -> System.out.println("La multiplicación es: " + (num1 * num2));
+            case 3 -> System.out.println("La división es: " + (num1 / num2));
+            default -> System.out.println("Opción no valida");
+        }
+        
 
         sc.close();
 
