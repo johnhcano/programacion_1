@@ -8,10 +8,13 @@ public class EjecutarBuilder {
         Converter objPostScript = new PostScriptConverter("PostScript");
         Converter objPDF = new PDFConverter("PDF");
 
-        Reader objLector = new Reader("LINE", objASCII);
+        Reader objLector1 = new Reader("LINE", objASCII);
+        Reader objLector2 = new Reader("LINE", objPDF);
+        Reader objLector3 = new Reader("TABLE", objPostScript);
+        
 
-        objLector.parseInput(); 
-
-
+        objLector1.parseInput(); //makeLine -> ASCII
+        objLector2.parseInput(); //makeLine -> PDF
+        objLector3.parseInput(); //makeTable -> PostScript
     } 
 }
