@@ -13,7 +13,7 @@ public class Ejecutar {
                             objEstudiante1.getNombres() + " es: " + 
                             objEstudiante1.calcularNotaFinal(3.0, 2.0, 5.0));
         System.out.println("La nota final del estudiante " + 
-                            objEstudiante1.getNombres() + " es: " + 
+                            objEstudiante2.getNombres() + " es: " + 
                             objEstudiante2.calcularNotaFinal(1.0, 1.0, 4.0));
         
     }
