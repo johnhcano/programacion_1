@@ -1,5 +1,3 @@
-package Clase12;
-
 public class Estudiante {
     
     //Atributos
@@ -31,5 +29,5 @@ public class Estudiante {
         double notaFinal = ((n1 * 0.30) + (n2 * 0.30) + (n3 * 0.40));
         return notaFinal;
     }
-    
+
 }
