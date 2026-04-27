@@ -18,6 +18,15 @@ public class Estudiante {
         this.edad = edad;
     }
 
+    //Métodos get y set para el atributo nombres
+    public String getNombres(){
+        return nombres;
+    }
+
+    public void setNombres(String nombres){
+        this.nombres = nombres;
+    }
+
     //El método toString permite mostrar la información que tiene el objeto.
     public String toString(){
         return "Estudiante { identificación: " + identificacion + 
