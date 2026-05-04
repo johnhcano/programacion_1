@@ -10,5 +10,11 @@ public class EjecutarPOO {
         //Mostrar los objetos
         System.out.println(objLibro1);
         System.out.println(objLibro2);
+
+        //Ejecución ejercicio #29
+        Producto objP1 = new Producto("Detergente Ariel", 5000.0, 10);
+        System.out.println(objP1.realizarVenta(5));
+        System.out.println(objP1.realizarVenta(2));
+
     }
 }
