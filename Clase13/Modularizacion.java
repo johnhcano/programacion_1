@@ -6,7 +6,10 @@ public class Modularizacion {
         mostrarSaludo("Juan");
         System.out.println(descuento(100));
         System.out.println(calcularDescuento(100, 40.0));
-        System.out.println(verificarNumeroPrimo(45));
+        System.out.println(verificarNumeroPrimo(5));
+        System.out.println(verificarNumeroPrimoContador(5));
+        System.out.println(verificarNumeroPrimoWhile(5));
+        
     }
 
     public static double convertirDolares(double monedaLocal) {
@@ -48,6 +51,18 @@ public class Modularizacion {
         }else{
             return "El número " + numero + " no es primo";
         }
+    }
+
+    public static boolean verificarNumeroPrimoWhile(int numero){
+        boolean esPrimo = true;
+        int i = 2;
+        while(i < numero){
+            if((numero % i == 0)){
+                esPrimo = false;
+            }
+            i++;
+        }
+        return esPrimo;
     }
 
 }
